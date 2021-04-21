@@ -51,7 +51,7 @@ try {
 
 	//	Output memory usage.
 	if( Env::isAdmin() and (Env::Mime() === 'text/html') ){
-		$app->Template('app.phtml');
+		Template('app.phtml');
 	};
 
 } catch ( \Throwable $e ){
