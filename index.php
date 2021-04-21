@@ -33,13 +33,13 @@ if( empty($args) ){
 	/** Welcome page file is in "asset/template" directory.
 	 *
 	 */
-	$app->Template('welcome.phtml');
+	Template('welcome.phtml');
 
 }else{
 
 	/** 404.php file is in current directory.
 	 *
 	 */
-	$app->Template('404.php');
+	Template('404.php');
 
 }
