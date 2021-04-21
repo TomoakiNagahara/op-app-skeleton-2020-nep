@@ -21,24 +21,8 @@ namespace OP;
  */
 use function OP\APP\FUNC\GetLinkList;
 
-/* @var $app UNIT\App */
-$app->Title('Welcome');
-
-//	Get app root.
-$app_root   = ConvertPath('app:/');
-$asset_root = ConvertPath('asset:/');
-$asset_path = null;
-
-//	Calc asset path.
-if( strpos($asset_root, $app_root) === 0 ){
-	$asset_path = substr($asset_root, strlen($app_root));
-}else{
-	$asset_path = $asset_root;
-}
-
 //	...
-require_once( ConvertPath('asset:/function/welcome.php') );
-$list = GetLinkList();
+Unit('App')->Title('Welcome');
 
 ?>
 <style>
@@ -88,35 +72,15 @@ $list = GetLinkList();
 <section>
 	<h2>Built-in Service</h2>
 	<ul>
-	<?php foreach( $list as $name => $path ): ?>
-			<li class="<?= $path ? '':'gray' ?>">
-				<?php if( $path ): ?>
-					<a href="<?= $path ?>"><?= $name ?></a>
-				<?php else: ?>
-					<span class="gray"><?= $name ?></span>
-				<?php endif; ?>
-			</li>
-	<?php endforeach; ?>
+		<li><a href="_develop">develop</a></li>
 	</ul>
 </section>
 
 <!-- Not linked yet -->
-<?php if( array_search(false, $list, true) ): ?>
 <section>
-<h2>Example</h2>
-<pre><code><?php /* pre tag designe is feces */ ?>
-cd <?= $app_root ?><br/>
-<?php
-foreach( $list as $name => $path ){
-	//	...
-	if( $path !== false ){
-		continue;
-	}
-
-	//	...
-	echo "ln -s {$asset_path}{$name} _{$name}<br/>";
-}
-?>
-</code></pre>
+	<h2>Example</h2>
+	<div class="pre code">
+cd <?= ConvertPath('app:/') ?><br/>
+ln -s asset/develop _develop
+	</div>
 </section>
-<?php endif; ?>
