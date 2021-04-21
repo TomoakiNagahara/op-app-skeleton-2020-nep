@@ -12,12 +12,14 @@
 <html>
 	<head>
 		<style>
-		pre {
+		div.pre {
 			margin:0 1em;
 			padding:0.5em;
 			background-color:#dfdfdf;
 			border: 1px solid #cfcfcf;
 			border-radius: 0.25em;
+			font-family: monospace;
+			font-size: 16px;
 		}
 
 		.margin.left {
@@ -30,16 +32,20 @@
 			<h1>The admin config file has not been set.</h1>
 
 			<p class="margin left">File path is</p>
-			<pre class="margin left">asset:/config/admin.php</pre>
+			<div class="pre margin left">asset/config/admin.php</div>
 
 			<p class="margin left">Description is</p>
-<pre class="margin left">&lt;?php
-return [
-  OP\Env::_ADMIN_IP_   => '127.0.0.1',
-  OP\Env::_ADMIN_MAIL_ => 'to_address@example.com',
-  OP\Env::_MAIL_FROM_  => 'from_address@example.com'
-];
-?&gt;</pre>
+			<div class="pre margin left">
+				&lt;?php<br/>
+				return [<br/>
+				<div class="margin left">
+				  OP\Env::_ADMIN_IP_   => '127.0.0.1',<br/>
+				  OP\Env::_ADMIN_MAIL_ => 'to_address@example.com',<br/>
+				  OP\Env::_MAIL_FROM_  => 'from_address@example.com'<br/>
+				</div>
+				];<br/>
+				// ?&gt;
+			</div>
 		</section>
 	</body>
 </html>
