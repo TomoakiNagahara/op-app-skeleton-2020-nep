@@ -1,7 +1,7 @@
 
-# Branch name
+# Init Remote and Branch name
 REMOTE=${1:-origin}
-BRANCH=${2:-2020}
+BRANCH=${2:-2021}
 
 # Update git submodules
 git submodule foreach git fetch

@@ -1,6 +1,6 @@
 
 # branch name
-BRANCH=${1:-2020}
+BRANCH=${1:-2021}
 
 # Init git submodule
 git submodule init
