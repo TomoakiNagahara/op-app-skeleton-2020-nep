@@ -31,6 +31,14 @@ sh ./rename.sh origin github
 sh ./update.sh
 ```
 
+# z-github.sh
+
+ Set up a github repository for all submodules.
+
+```
+sh ./z-github.sh user_id
+```
+
 # z-original.sh
 
  Set up a private repository for all submodules.
