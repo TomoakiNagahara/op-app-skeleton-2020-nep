@@ -31,10 +31,10 @@ sh ./rename.sh origin github
 sh ./update.sh
 ```
 
-# z.sh
+# z-original.sh
 
  Set up a private repository for all submodules.
 
 ```
-sh ./z.sh
+sh ./z-original.sh
 ```
