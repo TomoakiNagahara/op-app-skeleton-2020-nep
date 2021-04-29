@@ -1,14 +1,17 @@
 
 # Add private repository
 
+# Init Remote name
+REMOTE=${1:-origin}
+
 # WebPack
 cd webpack
-git remote add origin repo:~/repo/op/module/webpack.git
+git remote add $REMOTE repo:~/repo/op/module/webpack.git
 cd ..
 
 # Core
 cd asset/core
-git remote add origin repo:~/repo/op/core/7.git
+git remote add $REMOTE repo:~/repo/op/core/7.git
 cd ../..
 
 # Asset
@@ -16,7 +19,7 @@ cd asset
 for module in 'testcase' 'reference' 'develop'
 do
 	cd $module
-	git remote add origin repo:~/repo/op/module/$module.git
+	git remote add $REMOTE repo:~/repo/op/module/$module.git
 	cd ..
 done
 cd ..
@@ -30,7 +33,7 @@ for name in *; do
 	fi
 
 	cd $name
-	git remote add origin repo:~/repo/op/layout/$name.git
+	git remote add $REMOTE repo:~/repo/op/layout/$name.git
 	cd ..
 done
 cd ../..
@@ -44,10 +47,10 @@ for unit in *; do
 	fi
 
 	cd $unit
-	git remote add origin repo:~/repo/op/unit/$unit.git
+	git remote add $REMOTE repo:~/repo/op/unit/$unit.git
 	cd ..
 done
 cd ../..
 
 # Fetch origin
-git submodule foreach git fetch origin
+git submodule foreach git fetch $REMOTE
