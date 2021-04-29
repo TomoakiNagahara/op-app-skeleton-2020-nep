@@ -42,7 +42,9 @@ $hash_css = Unit('WebPack')->FileContentHash('css');
 	<meta name="format-detection"    content="telephone=no" />
 
 	<!-- Canonical -->
-	<link rel="canonical" href="<?= App::Canonical() ?>" />
+	<?php if( $canonical = Config::Get('app')['canonical'] ?? null ): ?>
+	<link rel="canonical" href="<?= $canonical ?>" />
+	<?php endif; ?>
 
 	<!-- Icon -->
 	<link type="image/x-icon" href="<?= "{$app_root}img/favicon.ico" ?>" rel="icon" />
