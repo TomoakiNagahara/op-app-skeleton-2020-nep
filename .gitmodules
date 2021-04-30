@@ -38,10 +38,6 @@
 	path = asset/unit/dump
 	url = https://github.com/onepiece-framework/unit-dump.git
 	branch = 2020
-[submodule "asset/reference"]
-	path = asset/reference
-	url = https://github.com/onepiece-framework/module-reference.git
-	branch = 2020
 [submodule "asset/develop"]
 	path = asset/develop
 	url = https://github.com/onepiece-framework/module-develop.git
