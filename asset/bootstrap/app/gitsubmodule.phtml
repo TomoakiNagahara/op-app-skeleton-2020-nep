@@ -7,17 +7,25 @@
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright Tomoaki Nagahara All right reserved.
  */
+
+/*
+$app_root =  getcwd();
+*/
+$app_root = $_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI'];
+
 ?>
 <!doctype html>
 <html>
 	<head>
 		<style>
-		pre {
+		div.pre {
 			margin:0 1em;
 			padding:0.5em;
 			background-color:#dfdfdf;
 			border: 1px solid #cfcfcf;
 			border-radius: 0.25em;
+			font-family: monospace;
+			font-size: 16px;
 		}
 		</style>
 	</head>
@@ -25,7 +33,11 @@
 		<section>
 			<h1>Not initializing git submodule</h1>
 			<p>Execute the following command.</p>
-			<pre>sh asset/git/submodule/init.sh</pre>
+			<div class="pre">
+				cd <?= $app_root ?><br/>
+				git checkout 2021<br/>
+				sh asset/git/submodule/init.sh
+			</div>
 		</section>
 	</body>
 </html>
