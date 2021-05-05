@@ -24,6 +24,10 @@ use function OP\APP\FUNC\GetLinkList;
 //	...
 Unit('App')->Title('Welcome');
 
+//	...
+$path   = ConvertPath('app:/_develop/', false);
+$exists = file_exists($path);
+
 ?>
 <style>
 #welcome img {
@@ -68,6 +72,8 @@ Unit('App')->Title('Welcome');
 <!-- Separator -->
 <hr class="float clear both"/>
 
+<?php if( $exists ): ?>
+
 <!-- Already linked -->
 <section>
 	<h2>Built-in Service</h2>
@@ -75,6 +81,8 @@ Unit('App')->Title('Welcome');
 		<li><a href="_develop">develop</a></li>
 	</ul>
 </section>
+
+<?php else: ?>
 
 <!-- Not linked yet -->
 <section>
@@ -84,3 +92,5 @@ cd <?= ConvertPath('app:/') ?><br/>
 ln -s asset/develop _develop
 	</div>
 </section>
+
+<?php endif; ?>
