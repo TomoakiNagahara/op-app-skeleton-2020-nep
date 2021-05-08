@@ -8,10 +8,8 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 
-/*
-$app_root =  getcwd();
-*/
-$app_root = $_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI'];
+//	AppRoot is uncertain.
+$app_root = rtrim($_SERVER['DOCUMENT_ROOT'], '/').$_SERVER['REQUEST_URI'];
 
 ?>
 <!doctype html>
