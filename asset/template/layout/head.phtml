@@ -16,9 +16,6 @@ namespace OP;
 /** use
  *
  */
-use OP\UNIT\App;
-
-/* @var $app UNIT\App */
 
 //	...
 $app_root= ConvertURL('app:/');
@@ -58,4 +55,4 @@ $hash_css = Unit('WebPack')->FileContentHash('css');
 	<?php Template('i18n_load_script.phtml'); ?>
 
 	<!-- title -->
-	<title><?= App::Title() ?></title>
+	<title><?php if( function_exists('Title') ){ Title(); } ?></title>
