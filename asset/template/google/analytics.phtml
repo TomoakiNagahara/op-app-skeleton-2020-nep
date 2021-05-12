@@ -15,8 +15,6 @@
  */
 namespace OP;
 
-/* @var $app UNIT\App */
-
 //	...
 if(!$tracking_id = Config::Get('google')['analytics']['id'] ?? null ){
 	echo '<!-- Google analytics tracking id is empty. -->'.PHP_EOL;
@@ -42,7 +40,7 @@ ga('create','<?= $tracking_id ?>','auto');
 ga('send','pageview');
 
 <?php /* user traccking */ ?>
-<? if( $user_id = $app->UserID() ): ?>
+<? if( $user_id = Cookie::UserID() ): ?>
 ga('set','&uid','<?= $user_id ?>');
 <? endif; ?>
 </script>
