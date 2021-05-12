@@ -14,10 +14,15 @@
  */
 namespace OP;
 
-/* @var $app UNIT\App */
-Template('google/analytics.phtml');
+//	...
+$config = Config::Get('app');
+
+//	...
+if( $analytics = $config['analytics'] ?? null ){
+	Template('analytics/action.php',['analytics'=>$analytics]);
+}
 
 ?>
 <footer>
-	<?= Env::Get('app')['copyright'] ?? null ?>
+	<?= $config['copyright'] ?? null ?>
 </footer>
