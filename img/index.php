@@ -63,7 +63,7 @@ switch( $ext ){
 }
 
 //	Layout to off.
-$app->Layout(false);
+Layout(false);
 
 //	Set MIME.
 Env::Mime($mime);
