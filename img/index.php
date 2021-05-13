@@ -13,10 +13,8 @@
  */
 namespace OP;
 
-/* @var $app \OP\UNIT\App */
-
 //	Get "SmartURL" Arguments.
-$args = $app->Unit('Router')->Args();
+$args = Args();
 
 //	Get file name.
 $file = $args[0] ?? '404';
