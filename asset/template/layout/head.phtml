@@ -19,7 +19,7 @@ namespace OP;
 
 //	...
 $app_root= ConvertURL('app:/');
-$charset = Env::Get('app')   ['charset'] ?? 'utf-8';
+$charset = Charset();
 $layout  = Layout();
 
 //	...
