@@ -25,7 +25,7 @@ if( empty($app) ){
 /***********************************************/
 
 //	Get SmartURL arguments.
-$args = $app->Args();
+$args = Args();
 
 //	Does if has arguments?
 if( empty($args) ){
