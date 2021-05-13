@@ -20,7 +20,7 @@ namespace OP;
 //	...
 $app_root= ConvertURL('app:/');
 $charset = Env::Get('app')   ['charset'] ?? 'utf-8';
-$layout  = Env::Get('layout')['name']    ??  null;
+$layout  = Layout();
 
 //	...
 $hash_js  = Unit('WebPack')->FileContentHash('js');
