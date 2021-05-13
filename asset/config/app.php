@@ -14,6 +14,6 @@
  * @return    array        $config
  */
 return [
-	'title'     => 'onepiece-framework app skeleton 2020',
+	'title'     => 'onepiece-framework app skeleton 2021',
 	'copyright' => 'Copyright 2009 All right reserved.',
 ];
