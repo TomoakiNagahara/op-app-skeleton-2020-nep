@@ -3,12 +3,12 @@
 </span>
 
 ![icon@48](https://user-images.githubusercontent.com/1668339/72398593-cb0d1900-3786-11ea-863c-418ff8d48f43.png)
-The onepiece-framework 2020 - New Enforce Power
+The onepiece-framework 2021 - New Enforce Power
 ===
 
 ![PHP-7.0 higher](https://img.shields.io/badge/PHP-7.0_higher-brightgreen)
 
- Welcome to "onepiece-framework" app "skeleton" 2020 on New Enforce Power.
+ Welcome to "onepiece-framework" app "skeleton" 2021 on New Enforce Power.
  The "onepiece-framework" is insanely great!!
 
 # Indexes
@@ -78,20 +78,20 @@ The onepiece-framework 2020 - New Enforce Power
 
  1. PHP version is 7.0 later.
  1. Document-Root path is "/var/www/html/".
- 1. Application-root path is "/var/www/html/app-skeleton-2020-nep/".
+ 1. Application-root path is "/var/www/html/app-skeleton-2021-nep/".
  1. Server domain name is "localhost".
- 1. Application URL is "http://localhost/app-skeleton-2020-nep/".
+ 1. Application URL is "http://localhost/app-skeleton-2021-nep/".
 
 ## Installation instructions
 
  1. Do download or git clone from github.com.
     1. Download
-       1. Access to https://github.com/onepiece-framework/app-skeleton-2020-nep
+       1. Access to https://github.com/onepiece-framework/app-skeleton-2021-nep
        1. Click download button.
-       1. Copy "app-skeleton-2020-nep" directory inside to "/var/www/html" directory.
+       1. Copy "app-skeleton-2021-nep" directory inside to "/var/www/html" directory.
     1. Git clone
        1. `cd /var/www/html` -- This directory is example.
-       1. `git clone --recursive https://github.com/onepiece-framework/app-skeleton-2020-nep.git` -- Use recursive option.
+       1. `git clone --recursive https://github.com/onepiece-framework/app-skeleton-2021-nep.git` -- Use recursive option.
  2. HTTP Server configuration
     1. Apache
        - No configuration is required.
@@ -99,9 +99,9 @@ The onepiece-framework 2020 - New Enforce Power
        - No configuration is required.
     1. PHP Built-in server
        1. ```
-          php -S localhost:80 /var/www/html/app-skeleton-2020-nep/app.php
+          php -S localhost:80 /var/www/html/app-skeleton-2021-nep/app.php
           ```
- 3. Access to "http://localhost/app-skeleton-2020-nep" by your browser.
+ 3. Access to "http://localhost/app-skeleton-2021-nep" by your browser.
 
 # <a name="usage">Usage</a>
 
