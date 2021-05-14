@@ -91,7 +91,7 @@ The onepiece-framework 2021 - New Enforce Power
        1. Copy "app-skeleton-2021-nep" directory inside to "/var/www/html" directory.
     1. Git clone
        1. `cd /var/www/html` -- This directory is example.
-       1. `git clone --recursive https://github.com/onepiece-framework/app-skeleton-2021-nep.git` -- Use recursive option.
+       1. `git clone -b 2021 https://github.com/onepiece-framework/app-skeleton-2021-nep.git` -- Use recursive option.
  2. HTTP Server configuration
     1. Apache
        - No configuration is required.
