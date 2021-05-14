@@ -6,7 +6,7 @@
 The onepiece-framework 2021 - New Enforce Power
 ===
 
-![PHP-7.0 higher](https://img.shields.io/badge/PHP-7.0_higher-brightgreen)
+![PHP-8.0 higher](https://img.shields.io/badge/PHP-8.0_higher-brightgreen)
 
  Welcome to "onepiece-framework" app "skeleton" 2021 on New Enforce Power.
  The "onepiece-framework" is insanely great!!
