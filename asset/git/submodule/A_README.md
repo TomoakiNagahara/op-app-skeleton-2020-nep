@@ -21,8 +21,8 @@ sh ./init.sh
  Rename the repositories for all submodules.
 
 ```
-# "origin" is change to "github"
-sh ./rename.sh origin github
+# "origin" is change to "upstream"
+sh ./rename.sh origin upstream
 ```
 
 # update.sh
