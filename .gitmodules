@@ -38,3 +38,6 @@
 	path = asset/develop
 	url = https://github.com/onepiece-framework/module-develop.git
 	branch = 2021
+[submodule "asset/webpack/css/op"]
+	path = asset/webpack/css/op
+	url = https://github.com/onepiece-framework/op-webpack-css.git
