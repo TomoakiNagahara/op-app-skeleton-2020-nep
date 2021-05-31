@@ -59,5 +59,12 @@ for unit in *; do
 done
 cd ../..
 
+# Js/Css
+cd asset/webpack/js/op
+git remote add $REMOTE https://github.com/$USERID/op-webpack-js.js
+cd ../../css/op
+git remote add $REMOTE https://github.com/$USERID/op-webpack-css.js
+cd ../../..
+
 # Fetch origin
 git submodule foreach git fetch $REMOTE
