@@ -41,3 +41,6 @@
 [submodule "asset/webpack/css/op"]
 	path = asset/webpack/css/op
 	url = https://github.com/onepiece-framework/op-webpack-css.git
+[submodule "asset/webpack/js/op"]
+	path = asset/webpack/js/op
+	url = https://github.com/onepiece-framework/op-webpack-js.git
