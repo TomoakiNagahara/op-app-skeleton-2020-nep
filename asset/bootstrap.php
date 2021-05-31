@@ -1,9 +1,9 @@
 <?php
-/** op-app-skeleton-2020-nep:/asset/bootstrap.php
+/** op-app-skeleton-2021-nep:/asset/bootstrap.php
  *
  * @created   2018-03-27
  * @version   1.0
- * @package   op-app-skeleton-2020-nep
+ * @package   op-app-skeleton-2021-nep
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright Tomoaki Nagahara All right reserved.
  */
